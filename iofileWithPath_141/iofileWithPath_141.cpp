@@ -11,8 +11,10 @@ using namespace std;
 int main()
 {
     string baris;
-    string Namafile;
+    string NamaFile;
 
+    cout << "Masukkan Nama File : ";
+    cin >> NamaFile;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
