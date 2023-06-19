@@ -1,28 +1,17 @@
-// manualExeption_141.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include <exception>
+//untuk obyek exeption yang akan digunakan 
+#include <array>
+//untuk obyek array yang akan kita gunakan 
 using namespace std;
-
 
 int main()
 {
+    cout << "Awal Program" << endl; //penanda 1:...
     try {
-        cout << "Selamat Belajar di Prodi TI UMY" << endl;
-        //throw 0.5; //melemparkan sebuah integer maka
-        cout << "Pernyataan tidak akan dieksekusi" << endl;
+        array<int, 3> data = { 1, 2, 3 };
+        //pesan array
     }
-    catch (int a) {
-        //blok ini akan dieksekusi 
-        cout << "Pengecualian akan dieksekusi" << endl;
-    }
-    catch (...) {
-        /*jika selain integer maka blok ini akan dieksekusi*/
-        cout << "default Pengecualian dieksekusi" << endl;
-    }
-
-    return 0;
-
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
